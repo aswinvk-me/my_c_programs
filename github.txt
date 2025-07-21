@@ -1,0 +1,11 @@
+to add file to github
+
+
+git init
+git status
+git add . (for all files)
+       or
+git add filename
+git commit -m "a message like added filename.c"
+git push origin C_CLASS
+
