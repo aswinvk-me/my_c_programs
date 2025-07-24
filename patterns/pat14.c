@@ -1,9 +1,13 @@
 /*
  * Name: Aswin chandra M A
  * Date: 24/07/2025
- * Description: 
- * Sample Input: 
- * Sample Output: 
+ * Description: pattern
+ * Sample Input: 5
+ * Sample Output:       1
+		      1 2 1
+    		    1 2 3 2 1
+  		  1 2 3 4 3 2 1
+		1 2 3 4 5 4 3 2 1 
  */
 
 
@@ -20,9 +24,13 @@ int main()
 		{
 			printf("  ");
 		}
-		for(int k = 1; k <= i * 2 - 1; k++)
+		for(int k = 1; k <= i; k++)
 		{
-			printf("%d ",);
+			printf("%d ",k);
+		}
+		for(int l = i - 1; l >= 1; l--)
+		{
+			printf("%d ",l);
 		}
 		printf("\n");
 	}
