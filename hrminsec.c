@@ -8,12 +8,12 @@
 #include <stdio.h>
 int main()
 {
-	int num,hr,min,sec;
+	int hr,min,sec;
 	printf("Enter a time in seconds: ");
-	scanf("%d", &num);
-	hr=num/3600;
-	min=num/hr;
-	sec=num%hr;
-	
-	printf("%d hrs: %d mins: %d secs",hr,min,sec);
+	scanf("%d", &sec);
+	hr=sec/3600;
+	min=(sec%3600)/60;
+	sec=(sec%60);
+
+	printf("%d hrs: %d mins: %d secs\n",hr,min,sec);
 }
