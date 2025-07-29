@@ -21,7 +21,7 @@ int main()
 
 // for(int j =1; j <= n; j++)
 // {
-// 	if( j <= n - 1)
+// 	if( j <= n - i)
 // 	printf(" ");
 // 	else 
 // 	printf("* ");
