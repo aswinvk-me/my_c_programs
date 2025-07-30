@@ -28,7 +28,7 @@ int main()
 	switch(option)
 	{
 	case 1 : int high = arr[0];
-		 for(i = 1; i < 12; i++)
+		 for(i = 0; i < 12; i++)
 		 {
 			 if(high < arr[i])
 				 high = arr[i];
@@ -36,21 +36,21 @@ int main()
 		 printf("%d is the highest income in month %d", arr[i], i);
 		 break;
 	case 2 : int low = arr[0];
-		 for(i = 1; i < 12; i++)
+		 for(i = 0; i < 12; i++)
 		 {
 			 if(low > arr[i])
 				 low = arr[i];
 		 }
-		 printf("%d is the lowest income in month %d", arr[i], i+1);
+		 printf("%d is the lowest income in month %d", arr[i], i);
 		 break;
 
 	case 3 : printf("Average income is %d", average/12);
 		 break;
 	case 4 :
-		 printf("Average is %d", average/12);
+		 printf("Average is %d", average);
 		 for(i = 0; i < 12; i++)
 		 {
-			printf("month %d -> %d\n",i + 1, arr[i] - average/12);
+			printf("month %d -> %d\n",i + 1, arr[i] - average);
 		 }
 		 break;
 	}
